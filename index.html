@@ -1,0 +1,360 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yellow Kitchen</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="site-header">
+      <a class="site-logo" href="#" aria-label="Yellow Kitchen home">
+        <span class="site-logo__accent">yellow</span><span>kitchen</span>
+      </a>
+
+      <div class="site-header__actions">
+        <a class="header-link" href="#">
+          <svg class="header-link__icon" role="presentation" aria-hidden="true">
+            <use href="#person"></use>
+          </svg>
+          <span>Log in</span>
+        </a>
+
+        <a class="header-link header-link--cart" href="#">
+          <svg class="header-link__icon" role="presentation" aria-hidden="true">
+            <use href="#cart"></use>
+          </svg>
+          <span>0</span>
+        </a>
+
+        <button class="menu-button" type="button" data-menu-toggle aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="menu-drawer" data-menu>
+        <div class="menu-drawer__backdrop" data-menu-close></div>
+        <aside class="menu-drawer__panel" aria-label="Menu">
+          <div class="menu-drawer__top">
+            <a class="header-link" href="#">
+              <svg class="header-link__icon" role="presentation" aria-hidden="true">
+                <use href="#person"></use>
+              </svg>
+              <span>Log in</span>
+            </a>
+
+            <a class="header-link header-link--cart" href="#">
+              <svg class="header-link__icon" role="presentation" aria-hidden="true">
+                <use href="#cart"></use>
+              </svg>
+              <span>0</span>
+            </a>
+
+            <button class="menu-button menu-button--close" type="button" data-menu-close aria-label="Close menu">
+              <svg class="menu-button__close" role="presentation" aria-hidden="true">
+                <use href="#x-icon"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="menu-drawer__contact">
+            <svg class="menu-drawer__phone" role="presentation" aria-hidden="true">
+              <use href="#call"></use>
+            </svg>
+            <div>
+              <a class="menu-drawer__phone-link" href="tel:0800111126">0800 111 126</a>
+              <p class="menu-drawer__hours">8:00 - 22:00</p>
+            </div>
+          </div>
+
+          <nav class="menu-drawer__nav" aria-label="Site">
+            <a href="#">Delivery info</a>
+            <a href="#">About us</a>
+            <a href="#">Restaurants</a>
+            <a href="#">Specialities</a>
+          </nav>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="hero container">
+          <div class="hero__copy">
+            <h1 class="hero__title">Your Food court at home</h1>
+
+            <div class="hero__actions">
+              <a class="action-card action-card--delivery" href="#">
+                <strong>Delivery</strong>
+                <span>Order in</span>
+              </a>
+
+              <a class="action-card action-card--takeout" href="#">
+                <strong>Takeout</strong>
+                <span>Grab and go</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <figure class="hero-dish">
+              <img class="hero-dish__image" src="./src/img/webp/salad.webp" alt="Fresh salad" />
+              <img class="leaf leaf--right" src="./src/img/webp/arugula.webp" alt="" aria-hidden="true" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="Delivery benefits">
+        <div class="benefits container">
+          <article class="benefit">
+            <svg class="benefit__icon" role="presentation" aria-hidden="true">
+              <use href="#clock"></use>
+            </svg>
+            <p class="benefit__text">delivery in all paris in less than 30 minutes</p>
+          </article>
+          <article class="benefit">
+            <svg class="benefit__icon" role="presentation" aria-hidden="true">
+              <use href="#delivery"></use>
+            </svg>
+            <p class="benefit__text">Free delivery from 29 euros</p>
+          </article>
+          <article class="benefit">
+            <svg class="benefit__icon" role="presentation" aria-hidden="true">
+              <use href="#paris"></use>
+            </svg>
+            <p class="benefit__text">Only fresh and French products</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="restaurants">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Restaurants</h2>
+            <a class="show-all" href="#">show all</a>
+          </div>
+
+          <div class="carousel">
+            <div class="restaurant-list">
+              <article class="restaurant-card">
+                <img class="restaurant-card__image" src="./src/img/webp/burger.webp" alt="Burger dish" />
+                <img class="restaurant-card__logo" src="./src/img/webp/brand1.webp" alt="Burger D'lice logo" />
+              </article>
+
+              <article class="restaurant-card">
+                <img class="restaurant-card__image" src="./src/img/webp/pastifigio.webp" alt="Pasta dish" />
+                <img class="restaurant-card__logo" src="./src/img/webp/brand3.webp" alt="Il Pastificio logo" />
+              </article>
+
+              <article class="restaurant-card">
+                <img class="restaurant-card__image" src="./src/img/webp/salad.webp" alt="Salad dish" />
+                <img class="restaurant-card__logo" src="./src/img/webp/brand2.webp" alt="Believe logo" />
+              </article>
+
+              <article class="restaurant-card">
+                <img class="restaurant-card__image" src="./src/img/webp/vietnamase.webp" alt="Vietnamese dish" />
+                <img class="restaurant-card__logo" src="./src/img/webp/brand4.webp" alt="Vietnamese Go logo" />
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nearby">
+        <div class="container nearby__inner">
+          <div class="nearby__copy">
+            <h2 class="nearby__title">Your nearest restaurants</h2>
+            <p class="nearby__text">
+              Each kitchen works with its own delivery area to deliver food to you as soon
+              as possible
+            </p>
+          </div>
+
+          <form class="address-form">
+            <label class="sr-only" for="address">Address</label>
+            <div class="address-form__field">
+              <svg class="address-form__icon" role="presentation" aria-hidden="true">
+                <use href="#location"></use>
+              </svg>
+              <input id="address" type="text" placeholder="Enter delivery address" />
+            </div>
+            <button class="address-form__submit" type="submit">send</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="specialities">
+        <div class="container">
+          <div class="section-head section-head--compact">
+            <h2 class="section-title">Specialities</h2>
+            <a class="show-all" href="#">show all</a>
+          </div>
+
+          <div class="specialities__carousel">
+            <div class="specialities__track" data-carousel-track>
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#bagel"></use>
+                </svg>
+                <h3 class="speciality-card__title">Bagel</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#burger"></use>
+                </svg>
+                <h3 class="speciality-card__title">Burger</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#chicken"></use>
+                </svg>
+                <h3 class="speciality-card__title">Chicken</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#fish"></use>
+                </svg>
+                <h3 class="speciality-card__title">Fish</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#fishnchips"></use>
+                </svg>
+                <h3 class="speciality-card__title">Fish'Chips</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#vegan"></use>
+                </svg>
+                <h3 class="speciality-card__title">Salads</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#pizza"></use>
+                </svg>
+                <h3 class="speciality-card__title">Pizza</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#pasta"></use>
+                </svg>
+                <h3 class="speciality-card__title">Pasta</h3>
+              </article>
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#bagel"></use>
+                </svg>
+                <h3 class="speciality-card__title">Bagel</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#burger"></use>
+                </svg>
+                <h3 class="speciality-card__title">Burger</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#chicken"></use>
+                </svg>
+                <h3 class="speciality-card__title">Chicken</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#fish"></use>
+                </svg>
+                <h3 class="speciality-card__title">Fish</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#fishnchips"></use>
+                </svg>
+                <h3 class="speciality-card__title">Fish'Chips</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#vegan"></use>
+                </svg>
+                <h3 class="speciality-card__title">Salads</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#pizza"></use>
+                </svg>
+                <h3 class="speciality-card__title">Pizza</h3>
+              </article>
+
+              <article class="speciality-card">
+                <svg class="speciality-card__icon" role="presentation" aria-hidden="true">
+                  <use href="#pasta"></use>
+                </svg>
+                <h3 class="speciality-card__title">Pasta</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__brand">
+          <a class="site-logo site-logo--footer" href="#" aria-label="Yellow Kitchen home">
+            <span class="site-logo__accent">yellow</span><span>kitchen</span>
+          </a>
+        </div>
+
+        <div class="site-footer__columns">
+          <section class="footer-column">
+            <h3 class="footer-column__title">About us</h3>
+            <ul class="footer-list">
+              <li><a href="#">Concept</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Restaurant signup</a></li>
+              <li><a href="#">For Investors</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column">
+            <h3 class="footer-column__title">Get help</h3>
+            <ul class="footer-list">
+              <li><a href="#">Read FAQs</a></li>
+              <li><a href="#">Restaurants</a></li>
+              <li><a href="#">Specialities</a></li>
+              <li><a href="#">Sign up to deliver</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column footer-column--contact">
+            <h3 class="footer-column__title">Contact us</h3>
+            <ul class="footer-list">
+              <li>Yellow kitchen Paris 11</li>
+              <li>69 avenue de la Republique 75011 Paris</li>
+              <li>0800 111 126</li>
+              <li><a href="mailto:contact@yellowkitchens.com">contact@yellowkitchens.com</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
