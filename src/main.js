@@ -3,15 +3,13 @@ import "./style.css";
 async function injectSprite() {
   if (document.querySelector("[data-svg-sprite]")) return;
 
-  const [iconsResponse, spriteResponse] = await Promise.all([
-    fetch("/icons.svg"),
-    fetch("/sprite.svg"),
-  ]);
+  const spriteUrl = `${import.meta.env.BASE_URL}sprite.svg`;
+  const spriteResponse = await fetch(spriteUrl);
 
   const wrapper = document.createElement("div");
   wrapper.hidden = true;
   wrapper.dataset.svgSprite = "true";
-  wrapper.innerHTML = `${await iconsResponse.text()}${await spriteResponse.text()}`;
+  wrapper.innerHTML = await spriteResponse.text();
   document.body.prepend(wrapper);
 }
 
