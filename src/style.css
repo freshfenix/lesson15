@@ -92,15 +92,11 @@
   }
 
   .menu-button {
-    @apply flex h-12 w-12 flex-col items-center justify-center gap-1 rounded-full border border-line bg-surface shadow-[0_6px_18px_rgba(74,79,103,0.08)];
+    @apply flex h-12 w-12 flex-col cursor-pointer items-center justify-center gap-1 rounded-full border border-line bg-surface shadow-[0_6px_18px_rgba(74,79,103,0.08)];
   }
 
   .menu-button span {
     @apply block h-[2px] w-5 rounded-full bg-muted;
-  }
-
-  .menu-button__close {
-    /* drawer close icon - keep default sizing from component rules */
   }
 
   .menu-button__icon {
@@ -376,7 +372,7 @@
   }
 
   .address-form__submit {
-    @apply h-[72px] shrink-0 rounded-r-[8px] bg-brand px-7 text-[1.15rem] font-semibold text-white transition;
+    @apply h-[72px] shrink-0 rounded-r-[8px] bg-brand px-7 text-[1.15rem] font-semibold text-white transition cursor-pointer;
   }
 
   .address-form__submit:hover {
@@ -411,7 +407,7 @@
   }
 
   .speciality-card {
-    @apply flex-[0_0_170px] flex h-[170px] flex-col items-center justify-center gap-5 rounded-[8px] border border-[#f1f1f1] bg-surface p-5 snap-start transition;
+    @apply flex-[0_0_170px] flex h-[170px] flex-col items-center justify-center gap-5 rounded-[8px] border border-[#f1f1f1] bg-surface p-5 snap-start transition cursor-pointer;
   }
 
   .speciality-card:hover {
@@ -498,7 +494,7 @@
     }
 
     .leaf--right {
-      right: -1%;
+      right: 7%;
       top: 72%;
       width: 96px;
     }
